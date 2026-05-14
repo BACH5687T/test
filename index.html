@@ -1,0 +1,16 @@
+---
+layout: default
+title: الصفحة الرئيسية
+---
+
+<h1>مرحباً بك في مدونتي</h1>
+
+<p>هذه أول مدونة تم إنشاؤها باستخدام GitHub Pages.</p>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
